@@ -1,0 +1,216 @@
+// this is a js file
+/*
+*João Felipe M. F.
+*/
+
+//Interpretação de código
+
+//1)
+
+//a. undefined
+//b. null
+//c. 11
+//d. 3
+//e. (11) [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+//f. 9
+
+//2)
+ 
+//SUBI NUM ÔNIBUS EM MIRROCOS 27
+
+//B. Escrita de código
+
+//1)
+/*
+const nome = prompt('Qual seu nome? ');
+const email = prompt('Qual seu e-mail? ');
+console.log(`O e-mail, ${email} foi cadastrado com sucesso. Seja bem-vinda(o), ${nome}`);
+*/
+
+//2)
+/*
+let comidasPreferidas = ["Batata frita, strogonoff, hamburguer, lasanha, macarrão"];
+console.log(comidasPreferidas)
+console.log("Essa são as minhas comidas preferidas: ", "Batata frita", "strogonoff", "hamburguer", "lasanha", "macarrão");
+console.log(comidasPreferidas)
+comidasPreferidas[1] = prompt('Qual sua comida preferida? ');
+console.log(comidasPreferidas);
+*/
+
+//3)
+/*
+const listaDeTarefas = []
+listaDeTarefas[0] = prompt('Informe 3 tarefas que você precisa realizar no seu dia: ');
+listaDeTarefas[1] = prompt('Informe 3 tarefas que você precisa realizar no seu dia: ');
+listaDeTarefas[2] = prompt('Informe 3 tarefas que você precisa realizar no seu dia: ');
+console.log(listaDeTarefas[0]);
+console.log(listaDeTarefas[1]);
+console.log(listaDeTarefas[2]);
+console.log(listaDeTarefas);
+
+let tarefa = Number(prompt("Digite o índice de uma tarefa já realizada: "));
+listaDeTarefas.splice(tarefa, 1);
+console.log(listaDeTarefas);
+*/
+
+//Desafios
+/*
+
+//1)
+const frase = ("Só sei que nada sei");
+const fraseArray = frase.split(" ");
+console.log(fraseArray);
+*/
+
+//2)
+/*
+const lista = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"];
+const IndiceAbacaxi = lista.indexOf("Abacaxi");
+console.log(IndiceAbacaxi);
+console.log(lista.length);
+*/
+
+/João Felipe M. F.
+
+//A) Interpretação de código
+
+//1.
+//a)O código retorna no console se a pessoa pode dirigir ou não
+//b)A mensagem "Alice pode dirigir!" só será impressa no console caso o usuario insira a idade de 18 anos ou mais. Já "Alice não pode dirigir!" só será impressa se o usuario tiver menos de 18 anos
+
+//2.
+//a)Definir se o animal é carnívoro ou não
+//b)Leão é um animal carnívoro
+    
+//3.
+//a)Define se o número 10 é maior utilizando "if" ou menor ou igual a 5 utilizando "else". Define se o número é par ou impar através do resto da divisão
+//b)O número é maior do que 5. O número é par
+
+//B) Escrita de código
+
+//1.
+/*
+const idade = prompt('Qual sua idade? ');
+
+if (idade >= 18) {
+    console.log("Usuário maior que 18 anos.");
+} else {
+    console.log("Usuário menor de 18 anos.");
+}
+*/
+
+//2.
+/*
+const turno = prompt('Qual turno você estuda? ')
+    if (turno = M){
+        console.log(turno + 'Bom dia!')
+    }else if (turno = T){
+        console.log(turno + 'Boa tarde!')
+    }else (turno = N){
+        console.log(turno + 'Boa noite!')
+    }
+    */
+
+//3.
+/*
+let Turno = prompt("Qual turno do dia você estuda?");
+switch (Turno) {
+    case "M":
+        console.log("Bom Dia!")
+        break;
+    case "T":
+        console.log("Boa Tarde!")
+        break;
+    case "N":
+        console.log("Boa Noite!")
+        break
+}
+*/
+
+//4.
+/*
+const aluno = {
+    nome: "João",
+    idade: 29,
+    tipoDeCurso: "Programação",
+    temBolsa: false
+}
+
+if (aluno.idade < 30 && aluno.tipoDeCurso) {
+    console.log (`${aluno.nome} você pode se candidatar a uma bolsa de estudos!`)
+} else {
+    console.log (`${aluno.nome} você não pode se candidatar a uma bolsa de estudos!`)
+}
+*/
+
+//5.
+/*
+const produto = {
+    nome: "AirPods",
+    preco: 100,
+    desconto: 40,
+    freteGratis: true
+  };
+  
+  function calcularPrecoFinal(produto) {
+    let precoFinal = produto.preco;
+    let mensagem = "Preço final: " + precoFinal
+  
+    if (produto.desconto > 0) {
+      const descontoValor = (produto.preco * produto.desconto) / 50;
+      precoFinal -= descontoValor;
+      mensagem += ` (Desconto ${produto.desconto}%)`;
+    }
+  
+    if (produto.freteGratis) {
+      mensagem += " (Frete Grátis)";
+    }
+  
+    return mensagem;
+  }
+  
+  console.log(calcularPrecoFinal(produto))
+*/
+
+//6.
+/*
+ function soma (a, b){
+    return a + b;
+ }
+
+let a = Number(prompt("Insira o primeiro número: "));
+let b = Number(prompt("Insira o segundo número: "));
+ 
+console.log("Soma:", a + b)
+*/
+
+//7.
+/* 
+function calcularMedia(notas) {
+    if (notas.length !== 3) {
+      return "O array deve conter exatamente 3 notas.";
+    }
+  
+    const soma = notas.reduce((total, nota) => total + nota, 0);
+    const media = soma / 3;
+    return media;
+  }
+  
+  const notasAluno = [7.5, 8.0, 9.2];
+  const mediaAluno = calcularMedia(notasAluno);
+  console.log(`A média do aluno é: ${mediaAluno}`);f
+*/
+
+//8.
+/*
+function verificarPalindromo (){
+let palavra = prompt('Digite uma palavra ');
+let palindromo = [palavra];
+palavra = palavra.split("");
+palavra = palavra.slice().reverse();
+palavra = palavra.join("");
+}
+const resultado = verificarPalindromo(palavra);
+
+console.log(resultado);
+*/
